@@ -1,0 +1,86 @@
+.elementShap{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 3px;
+    border-radius: 10px;
+    transition: 0.6s;
+	transform-style: preserve-3d;
+}
+#element{
+    display: none;
+    width: 504px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#timer{
+    margin-top:20px;
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    transition: all 1s;
+}
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.font{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background-color: orange;
+    transform: rotateY(0deg);
+}
+.back{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flipo{
+    transform: rotateY(180deg);
+}
+.start, #again{
+    width: 130px;
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+#again{
+    margin-top:10px;
+    float: left;
+    margin-right: 20px;
+    background-color: tomato;
+}
+#result{
+    text-align: center;
+    display: none;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.zenter{
+    margin: 0 auto;
+}
